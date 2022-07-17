@@ -1,4 +1,4 @@
-package Candidate;
+package candidate;
 
 public class Interviewer {
     public static void check(String text) {

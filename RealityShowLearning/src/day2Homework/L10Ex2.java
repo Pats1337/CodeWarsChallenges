@@ -1,4 +1,4 @@
-package Day2Homework;
+package day2Homework;
 
 public class L10Ex2 {
     public static void main(String[] args) {
@@ -9,7 +9,9 @@ public class L10Ex2 {
     }
 
     private static void whatToDrink(float beerPrice, float wiskeyPrice, float myBudget) {
-        if (myBudget >= wiskeyPrice) {
+        if (myBudget >= wiskeyPrice + beerPrice) {
+            print("Whiskey and beer, please! ");
+        } else if (myBudget >= wiskeyPrice) {
             print("It's probably a great day for whiskey. Bartender, one whiskey, please!");
         } else if (myBudget >= beerPrice) {
             print("Eh, not enough whiskey today, so I'll have a beer. Buddy, pour me a mug of Guiness.");

@@ -1,4 +1,4 @@
-package Day2Homework;
+package day2Homework;
 
 public class L11Ex12 {
     public static void main(String[] args) {

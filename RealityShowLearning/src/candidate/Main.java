@@ -1,4 +1,4 @@
-package Candidate;
+package candidate;
 
 public class Main {
 
