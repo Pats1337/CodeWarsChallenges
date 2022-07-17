@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class L15Ex6 {
 
     private static final String MENU = "Целые типы переменных\n1. byte\n2. short\n3. char\n4. int\n5. long\n0. Выход\nВыберите необходимый пункт меню: ";
-    private static final String BYTE = "Тип byte. Размер: 8 бит. Диапазон: от -128 до 127";
-    private static final String SHORT = "Тип short. Размер: 16 бит. Диапазон: от -32768 до 32767";
+    private static final String BYTE = "Тип byte. Размер: 8 бит. Диапазон: от " + Byte.MIN_VALUE + " до " + Byte.MAX_VALUE;
+    private static final String SHORT = "Тип short. Размер: 16 бит. Диапазон: от " + Short.MIN_VALUE + " до " + Short.MAX_VALUE;
     private static final String CHAR = "Тип char. Размер: 16 бит. Диапазон: беззнаковое целое число, представляющее собой символ UTF-16 (буквы и цифры)";
-    private static final String INT = "Тип int. Размер: 32 бит. Диапазон: от -2147483648 до 2147483647";
-    private static final String LONG = "Тип long. Размер: 64 бит. Диапазон: от -9223372036854775808L до 9223372036854775807L";
-    private static final String ERROR = "Тип long. Размер: 64 бит. Диапазон: от -9223372036854775808L до 9223372036854775807L";
+    private static final String INT = "Тип int. Размер: 32 бит. Диапазон: от " + Integer.MIN_VALUE + " до " + Integer.MAX_VALUE;
+    private static final String LONG = "Тип long. Размер: 64 бит. Диапазон: от " + Long.MIN_VALUE + " до " + Long.MAX_VALUE;
+    private static final String ERROR = "Ошибка! Вы ввели некорректную команду";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
