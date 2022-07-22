@@ -2,13 +2,9 @@ package day5Homework.lesson23;
 
 public class Junior extends Employee{
     protected Junior(String name, int experience, int stack) {
-        super(name, experience, stack);
+        super(name, experience, stack, EmployeeType.JUNIOR);
     }
 
-    @Override
-    protected String getGrade() {
-        return getClass().getSimpleName();
-    }
 
     @Override
     protected int getSalary() {
