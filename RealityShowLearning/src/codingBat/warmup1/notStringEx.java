@@ -1,8 +1,7 @@
 package codingBat.warmup1;
 
-//Given a non-empty string and an int n, return a new string where the char at index n has been removed.
-// The value of n will be a valid index of a char in the original string
-// (i.e. n will be in the range 0..str.length()-1 inclusive).
+//Given a string, return a new string where "not " has been added to the front.
+// However, if the string already begins with "not", return the string unchanged.
 
 public class notStringEx {
     public static void main(String[] args) {
