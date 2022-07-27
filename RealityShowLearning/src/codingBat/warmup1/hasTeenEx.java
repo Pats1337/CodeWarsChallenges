@@ -9,6 +9,7 @@ public class hasTeenEx {
         print(hasTeen(20, 19, 10));
         print(hasTeen(20, 10, 13));
         print(hasTeen(11, 22, 22));
+        print(hasTeen(22, 22, 22));
     }
 
     private static void print(boolean b) {
