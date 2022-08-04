@@ -12,13 +12,20 @@ fun main(args: Array<String>) {
     println(doubleX("axxbb"))
     println(doubleX("xxbb"))
     println(doubleX("abbbbbbxxbb"))
-    println(doubleX("axaxbb"))
+    println(doubleX("axaxxbb"))
 }
 
 fun doubleX(str: String): Boolean {
     var findXX = false
-    if(str.contains("xx")){
-        findXX = true
+    for (i in 0..str.length - 2) {
+        if (str.substring(i, i + 1).equals("x")) {
+            if (str.substring(i, i + 2).equals("xx")) {
+                findXX = true
+                break
+            } else {
+                break
+            }
+        }
     }
     return findXX
 }
