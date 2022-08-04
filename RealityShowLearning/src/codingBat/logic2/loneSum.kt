@@ -11,17 +11,15 @@ fun main() {
 }
 
 fun loneSum(a: Int, b: Int, c: Int): Int {
-    val sum: Int
-    if (a == b && b == c){
-        sum = 0
-    } else if (a == b){
-        sum = c
-    } else if (b == c){
-        sum = a
-    } else if (a == c){
-        sum = b
+    return if (a == b && b == c) {
+        0
+    } else if (a == b) {
+        c
+    } else if (b == c) {
+        a
+    } else if (a == c) {
+        b
     } else {
-        sum = a + b + c
+        a + b + c
     }
-    return sum
 }
