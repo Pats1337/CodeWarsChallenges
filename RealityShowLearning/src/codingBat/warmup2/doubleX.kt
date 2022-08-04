@@ -13,19 +13,17 @@ fun main(args: Array<String>) {
     println(doubleX("xxbb"))
     println(doubleX("abbbbbbxxbb"))
     println(doubleX("axaxxbb"))
+    println(doubleX("aggggbx"))
 }
 
 fun doubleX(str: String): Boolean {
     var findXX = false
-    for (i in 0..str.length - 2) {
-        if (str.substring(i, i + 1).equals("x")) {
-            if (str.substring(i, i + 2).equals("xx")) {
-                findXX = true
-                break
-            } else {
-                break
-            }
-        }
+    val i = str.indexOf("x")
+    if (i != -1 &&
+        i + 1 < str.length &&
+        str.substring(i, i + 2).equals("xx")
+    ) {
+        findXX = true
     }
     return findXX
 }
