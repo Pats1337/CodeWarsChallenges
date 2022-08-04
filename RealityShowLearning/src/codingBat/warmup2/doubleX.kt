@@ -17,11 +17,8 @@ fun main(args: Array<String>) {
 
 fun doubleX(str: String): Boolean {
     var findXX = false
-    for (i in 0..str.length - 2) {
-        if (str.substring(i, i + 2).equals("xx")){
-            findXX = true
-            break
-        }
+    if(str.contains("xx")){
+        findXX = true
     }
     return findXX
 }
