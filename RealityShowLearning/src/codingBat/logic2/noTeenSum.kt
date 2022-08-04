@@ -15,17 +15,13 @@ fun main() {
 }
 
 fun noTeenSum(a: Int, b: Int, c: Int): Int {
-    var newA = a
-    var newB = b
-    var newC = c
-    if (a in 13..14 || a in 17..19) {
-        newA = 0
+    return checkNum(a) + checkNum(b) + checkNum(c)
+}
+
+fun checkNum(num: Int): Int {
+    return if (num in 13..14 || num in 17..19) {
+        0
+    } else {
+        num
     }
-    if (b in 13..14 || b in 17..19) {
-        newB = 0
-    }
-    if (c in 13..14 || c in 17..19) {
-        newC = 0
-    }
-    return newA + newB + newC
 }
