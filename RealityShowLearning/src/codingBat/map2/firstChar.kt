@@ -16,8 +16,7 @@ fun firstChar(strings: Array<String>): MutableMap<String, String> {
         if (!myMutableMap.containsKey(i.first().toString())) {
             myMutableMap[i.first().toString()] = i
         } else {
-            val lastText = myMutableMap.getValue(i.first().toString())
-            myMutableMap[i.first().toString()] = lastText + i
+            myMutableMap[i.first().toString()] += i
         }
     }
     return myMutableMap
