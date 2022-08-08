@@ -12,7 +12,7 @@ fun main() {
 
 fun mapShare(myMutableMap: MutableMap<String, String>): MutableMap<String, String> {
     if(myMutableMap.containsKey("a")){
-        myMutableMap.put("b", myMutableMap.getValue("a"))
+        myMutableMap["b"] = myMutableMap.getValue("a")
     }
     if(myMutableMap.containsKey("c")){
         myMutableMap.remove("c")
