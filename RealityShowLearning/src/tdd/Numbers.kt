@@ -3,6 +3,7 @@ package tdd
 interface Numbers {
 
     fun sum(): Int
+    fun difference(): Int
 
     class Base(
         private val number1: Int,
@@ -11,6 +12,10 @@ interface Numbers {
 
         override fun sum(): Int {
             return number1 + number2
+        }
+
+        override fun difference(): Int {
+            return number1 - number2
         }
     }
 }

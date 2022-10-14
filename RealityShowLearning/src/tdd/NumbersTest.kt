@@ -12,4 +12,12 @@ internal class NumbersTest {
         val expected: Int = 16
         assertEquals(expected, actual)
     }
+
+    @Test
+    fun test_difference(){
+        val numbers: Numbers = Numbers.Base(12,4)
+        val actual = numbers.difference()
+        val expected: Int = 8
+        assertEquals(expected, actual)
+    }
 }
