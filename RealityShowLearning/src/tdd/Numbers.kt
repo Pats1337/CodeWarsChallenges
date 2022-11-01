@@ -22,6 +22,8 @@ interface Numbers {
         }
 
         override fun divide(): Double {
+            if(number2 == 0)
+                throw IllegalArgumentException("can't divide by zero")
             return number1.toDouble() / number2
         }
     }

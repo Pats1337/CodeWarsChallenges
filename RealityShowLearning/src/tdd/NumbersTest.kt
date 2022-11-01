@@ -1,7 +1,7 @@
 package tdd
 
 import org.junit.Test
-import java.lang.IllegalArgumentException
+import kotlin.IllegalArgumentException
 import kotlin.test.assertEquals
 
 internal class NumbersTest {
@@ -36,6 +36,12 @@ internal class NumbersTest {
         val actual = numbers.divide()
         val expected = 2.5
         assertEquals(expected, actual)
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun test_divide_zero() {
+        val numbers: Numbers = Numbers.Base(3, 0)
+        numbers.divide()
     }
 
 
