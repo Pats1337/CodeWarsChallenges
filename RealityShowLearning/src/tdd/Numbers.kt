@@ -1,9 +1,12 @@
 package tdd
 
+import java.lang.IllegalArgumentException
+
 interface Numbers {
 
     fun sum(): Int
     fun difference(): Int
+    fun divide(): Double
 
     class Base(
         private val number1: Int,
@@ -16,6 +19,10 @@ interface Numbers {
 
         override fun difference(): Int {
             return number1 - number2
+        }
+
+        override fun divide(): Double {
+            return number1.toDouble() / number2
         }
     }
 }
