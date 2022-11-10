@@ -1,1 +1,1 @@
-Repository for downloading homework and tests done during training with the EasyCodeRu channel
+Repository for downloading completed tasks from CodeWars.com
